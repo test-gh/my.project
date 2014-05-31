@@ -1,0 +1,2 @@
+jQuery    2.0.3   http://jquery.com/
+Bootstrap 3.0.2   http://getbootstrap.com/

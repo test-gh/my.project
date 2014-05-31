@@ -1,0 +1,22 @@
+{{#if users}}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th><span class="glyphicon glyphicon-envelope"></span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <td><a href="/user/{{this.username}}">{{this.username}}</a></td>
+      <td>{{this.firstname}}</td>
+      <td>{{this.lastname}}</td>
+      <td><a href="mailto:{{this.email}}"><span class="glyphicon glyphicon-envelope"></span></a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
